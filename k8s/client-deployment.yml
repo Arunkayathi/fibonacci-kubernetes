@@ -9,14 +9,11 @@ spec:
       component: web
   template:
     metadata:
-      label:
+      labels:
         component: web
     spec:
       containers:
         - name: fibonacci-client
-         image: arunreddy2786/fibonacci-multi-client
-         ports:
-          - containerPort: 3000
-
-
-    
+          image: arunreddy2786/fibonacci-multi-client
+          ports:
+            - containerPort: 3000
